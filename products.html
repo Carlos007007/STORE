@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Products</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="js/materialize.min.js" ></script>
+	<script src="js/main.js" ></script>
+</head>
+<body>
+	<form id="LoginModal" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<h5 class="center-align">Login</h5>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-account-circle prefix"></i>
+					<input id="name" type="text" class="validate">
+					<label for="name">Name</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-lock prefix"></i>
+					<input id="password" type="password" class="validate">
+					<label for="password">Password</label>
+				</div>
+				<div class="col s12">
+					<p>User type</p>
+					<p>
+				      	<input name="group1" type="radio" id="test1" />
+				      	<label for="test1">Admin</label>
+				    </p>
+				    <p>
+				      	<input name="group1" type="radio" id="test2" />
+				      	<label for="test2">User</label>
+				    </p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Send"><i class="zmdi zmdi-mail-send"></i></a>
+			<a href="#!" class="modal-action modal-close waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cancel"><i class="zmdi zmdi-close"></i></a>
+		</div>
+	</form>
+	<form id="RegModal" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<h5 class="center-align">Registration</h5>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-account prefix"></i>
+					<input id="name" type="text" class="validate">
+					<label for="name">Name</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-account prefix"></i>
+					<input id="lastname" type="text" class="validate">
+					<label for="lastname">Last Name</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-face prefix"></i>
+					<input id="username" type="text" class="validate">
+					<label for="username">User Name</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-lock prefix"></i>
+					<input id="password" type="password" class="validate">
+					<label for="password">Password</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-account-box prefix"></i>
+					<input id="DNI" type="text" class="validate">
+					<label for="DNI">DNI</label>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Send"><i class="zmdi zmdi-mail-send"></i></a>
+			<a href="#!" class="modal-action modal-close waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cancel"><i class="zmdi zmdi-close"></i></a>
+		</div>
+	</form>
+	<nav class="NavBar full">
+		<div class="row">
+			<div class="tittles NavBar-logo col s12 m3">electronics</div>
+			<ul class="NavBar-links col m9">
+				<li><a href="index.html" class="waves-effect">Home</a></li>
+				<li><a href="products.html" class="waves-effect">Products</a></li>
+				<li><a href="#RegModal" class="waves-effect modal-trigger">Registration</a></li>
+				<li><a href="#!" class="waves-effect btn-shopcart">Shopcart</a></li>
+				<li><a href="#LoginModal" class="waves-effect modal-trigger">Login</a></li>	
+			</ul>
+			<i class="zmdi zmdi-more-vert full btn-menu hide-on-med-and-up waves-effect"></i>
+		</div>
+	</nav>
+	<div class="full ShoppingCart valign-wrapper">
+		<div class="container valign">
+			<div class="row valign-wrapper">
+				<div class="col s12 m6 valign">
+					<p class="center-align" style="color: #2F9FF3;">
+						<i class="zmdi zmdi-shopping-cart zmdi-hc-5x"></i>		
+					</p>
+					<p class="center-align">
+						<a class="btn-floating waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Empty cart" style="margin-right: 17px;"><i class="zmdi zmdi-delete"></i></a>
+						<a class="btn-floating waves-effect waves-light green tooltipped" data-position="bottom" data-tooltip="Confirm purchase"><i class="zmdi zmdi-money"></i></a>
+					</p>
+				</div>
+				<div class="col s12 m6 valign">
+					<table class="centered highlight responsive-table">
+				        <thead>
+				          	<tr>
+								<th>Product</th>
+								<th>Price</th>
+				          	</tr>
+				        </thead>
+				        <tbody>
+					        <tr>
+					            <td>Product #1</td>
+					            <td>$7</td>
+					        </tr>
+					        <tr>
+					            <td>Product #2</td>
+					            <td>$7</td>
+					        </tr>
+					        <tr>
+					            <td>Product #3</td>
+					            <td>$7</td>
+					        </tr>
+				        	<tr>
+				        		<td>Total</td>
+				        		<td>$21</td>
+				        	</tr>
+				        </tbody>
+      				</table>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<section>
+		<div class="container">
+			<div class="row">
+				<h4 class="center-align tittles">Products</h4>
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/img/header.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="zmdi zmdi-more-vert right"></i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="zmdi zmdi-close right"></i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/img/header.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="zmdi zmdi-more-vert right"></i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="zmdi zmdi-close right"></i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/img/header.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="zmdi zmdi-more-vert right"></i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="zmdi zmdi-close right"></i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/img/header.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="zmdi zmdi-more-vert right"></i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="zmdi zmdi-close right"></i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/img/header.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="zmdi zmdi-more-vert right"></i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="zmdi zmdi-close right"></i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/img/header.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="zmdi zmdi-more-vert right"></i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="zmdi zmdi-close right"></i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6">
+					<h5>Lorem ipsum dolor</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+				</div>
+				<div class="col s12 m6">
+					<h5 class="center-align">Lorem ipsum dolor</h5>
+					<ul class="center-align">
+						<li><a href="#!"><i class="zmdi zmdi-facebook"></i> &nbsp; Facebook</a></li>
+						<li><a href="#!"><i class="zmdi zmdi-twitter"></i> &nbsp; Twitter</a></li>
+						<li><a href="#!"><i class="zmdi zmdi-google-plus"></i> &nbsp; Google+</a></li>
+						<li><a href="#!"><i class="zmdi zmdi-instagram"></i> &nbsp; Instagram</a></li>
+					</ul>	
+				</div>
+				<div class="col s12 tittles footer-copyright">electronics &copy; 2016</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
